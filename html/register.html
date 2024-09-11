@@ -19,7 +19,12 @@
     </nav>
 
     <main>
-        <form action="form-login">
+        <form action="">
+            <label for="name">Nombre y apellido</label>
+            <input type="text" id="name" placeholder="Escriba su nombre..." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Escriba su email..." required>
 
             <label for="usuario">Nombre de Usuario</label>
             <input type="text" id="username" placeholder="Ingrese su username..." required>
@@ -27,7 +32,7 @@
             <label for="password">Contraseña</label>
             <input type="password" id="password" placeholder="Ingrese su contraseña..." required>
 
-            <button id="btn-login">Iniciar sesión</button>
+            <button id="btn-enviar">Aceptar</button>
 
         </form>
     </main>
@@ -45,6 +50,6 @@
         </nav>
     </footer>
 
-    <script src="/Proyecto-Blog-Personal/js/login.js"></script>
+    <script src="/Proyecto-Blog-Personal/js/script.js"></script>
 </body>
 </html>
