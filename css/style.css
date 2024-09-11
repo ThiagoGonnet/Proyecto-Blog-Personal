@@ -1,0 +1,104 @@
+/* MOBILE FIRST */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav, main, footer {
+    margin: 20px;
+}
+
+/* Barra de navegación */
+.barra-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.barra-nav button {
+    margin: 5px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+}
+
+.barra-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.barra-nav button:hover {
+    background-color: rgb(138, 172, 80);
+}
+
+/* Main */
+main section, main aside {
+    margin: 10px;
+}
+
+main section {
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+main aside {
+    background-color: yellow;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+/* Desktop Version */
+@media (min-width: 1024px) {
+    /* Barra de navegación */
+    .barra-nav {
+        flex-direction: row; /* Cambia la dirección a horizontal */
+        justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
+        align-items: center;
+    }
+
+    .barra-nav button {
+        margin: 5px;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: darkolivegreen;
+    }
+
+    .barra-nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Main */
+    main section, main aside {
+        margin: 5px;
+        display: flex;
+    }
+
+    main section {
+        background-color: green;
+        width: 400px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    main aside {
+        background-color: yellow;
+        width: 250px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: row;
+    }
+}
